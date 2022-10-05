@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
             ProductcategorySeeder::class,
             ProductSeeder::class,
             PricehistorySeeder::class,
+            OrderSeeder::class,
+            BuyhistorySeeder::class,
+            StockSeeder::class,
         ]);
     }
 }

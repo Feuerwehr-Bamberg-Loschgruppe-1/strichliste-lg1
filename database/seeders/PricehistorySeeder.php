@@ -8,6 +8,8 @@ use Illuminate\Database\Seeder;
 
 class PricehistorySeeder extends Seeder
 {
+    use WithoutModelEvents;
+    
     /**
      * Run the database seeds.
      *
@@ -22,5 +24,7 @@ class PricehistorySeeder extends Seeder
             'buy_price_per_box' => 17.00,
             'buy_price_single_item' => 17.00/20,
         ]);
+
+        Pricehistory::factory(10)->create();
     }
 }
