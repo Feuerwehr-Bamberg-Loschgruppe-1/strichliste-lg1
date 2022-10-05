@@ -17,9 +17,9 @@ class GroupFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'admin',
-            'has_admin_rights' => TRUE,
-            'is_able_to_login' => TRUE,
+            'name' => fake()->firstName(),
+            'has_admin_rights' => rand(0, 1),
+            'is_able_to_login' => rand(0, 1),
         ];
     }
 }
