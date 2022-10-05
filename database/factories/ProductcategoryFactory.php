@@ -2,12 +2,14 @@
 
 namespace Database\Factories;
 
+use Faker\Provider\ar_EG\Text;
+use Faker\Provider\de_DE\Text as De_DEText;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Group>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Productcategory>
  */
-class GroupFactory extends Factory
+class ProductcategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,8 +20,6 @@ class GroupFactory extends Factory
     {
         return [
             'name' => fake()->text(10),
-            'has_admin_rights' => rand(0, 1),
-            'is_able_to_login' => rand(0, 1),
         ];
     }
 }

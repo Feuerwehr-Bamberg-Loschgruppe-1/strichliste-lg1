@@ -2,11 +2,13 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+    use WithoutModelEvents;
+
     /**
      * Seed the application's database.
      *
@@ -36,5 +38,17 @@ class DatabaseSeeder extends Seeder
         ]);
         
         \App\Models\User::factory(10)->create();
+
+        \App\Models\Productcategory::factory()->create([
+            'name' => 'Trinken',
+        ]);
+
+        \App\Models\Productcategory::factory()->create([
+            'name' => 'Essen',
+        ]);
+
+        $this->call([
+            ProductSeeder::class,
+        ]);
     }
 }
