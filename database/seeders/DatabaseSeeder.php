@@ -16,38 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Group::factory()->create([
-            'name' => 'admin',
-            'has_admin_rights' => TRUE,
-            'is_able_to_login' => TRUE,
-        ]);
-
-        \App\Models\Group::factory()->create([
-            'name' => 'user',
-            'has_admin_rights' => FALSE,
-            'is_able_to_login' => FALSE,
-        ]);
-
-        \App\Models\User::factory()->create([
-            'group_id' => '1',
-            'first_name' => 'Alexander',
-            'last_name' => 'Gropp',
-            'name' => 'Alexander Gropp',
-            'email' => 'alex.gropp@domain.tld',
-            'password' => bcrypt(value:'password'),
-        ]);
-        
-        \App\Models\User::factory(10)->create();
-
-        \App\Models\Productcategory::factory()->create([
-            'name' => 'Trinken',
-        ]);
-
-        \App\Models\Productcategory::factory()->create([
-            'name' => 'Essen',
-        ]);
-
         $this->call([
+            GroupSeeder::class,
+            UserSeeder::class,
+            ProductcategorySeeder::class,
             ProductSeeder::class,
             PricehistorySeeder::class,
         ]);
