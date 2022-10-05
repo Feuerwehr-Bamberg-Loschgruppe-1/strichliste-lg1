@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Alexander Gropp',
             'email' => 'alex.gropp@domain.tld',
             'password' => bcrypt(value:'password'),
-            'groups_id' => '0',
+            'group_id' => '0',
         ]);
 
         \App\Models\User::factory(10)->create();

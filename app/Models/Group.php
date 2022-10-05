@@ -10,8 +10,6 @@ class Group extends Model
 {
     use HasFactory, SoftDeletes;
 
-
-
     protected $fillable = [
         'name',
         'has_admin_rights',
