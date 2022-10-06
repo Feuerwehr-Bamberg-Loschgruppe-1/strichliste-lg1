@@ -22,6 +22,7 @@ return new class extends Migration
             $table->decimal('buy_price_per_box');
             $table->decimal('buy_price_single_item');
             $table->boolean('is_alcohole');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

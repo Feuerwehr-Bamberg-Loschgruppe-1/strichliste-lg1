@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignID('user_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->decimal('sum_paid');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignID('order_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignID('product_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->integer('amount_in_stock');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

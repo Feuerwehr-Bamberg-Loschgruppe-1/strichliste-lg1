@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('amount_per_box');
             $table->decimal('buy_price_per_box');
             $table->decimal('buy_price_single_item');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

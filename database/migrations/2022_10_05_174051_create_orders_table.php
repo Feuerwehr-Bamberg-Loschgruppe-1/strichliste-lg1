@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignID('product_id')->constrained('products')->cascadeOnUpdate()->cascadeOnDelete();
             $table->integer('amount_of_boxes');
             $table->decimal('total_buy_price_of_boxes');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

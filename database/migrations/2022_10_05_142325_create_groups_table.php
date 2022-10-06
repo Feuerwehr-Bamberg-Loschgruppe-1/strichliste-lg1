@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->boolean('has_admin_rights');
             $table->boolean('is_able_to_login');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

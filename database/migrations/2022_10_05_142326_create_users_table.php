@@ -23,6 +23,7 @@ return new class extends Migration
             $table->foreignID('group_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('password');
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

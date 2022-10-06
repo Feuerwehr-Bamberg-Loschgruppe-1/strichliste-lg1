@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignID('user_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignID('product_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->boolean('paid');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
