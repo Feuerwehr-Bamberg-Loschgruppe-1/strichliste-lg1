@@ -17,7 +17,7 @@ class StockFactory extends Factory
     public function definition()
     {
         return [
-            'buyhistory_id' => rand(1, 11),
+            'buy_history_id' => rand(1, 11),
             'order_id' => rand(1, 11),
             'product_id' => rand(1, 11),
             'amount_in_stock' => rand(1, 100),

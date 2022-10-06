@@ -2,14 +2,12 @@
 
 namespace Database\Factories;
 
-use Faker\Provider\ar_EG\Text;
-use Faker\Provider\de_DE\Text as De_DEText;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Productcategory>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\BuyHistory>
  */
-class ProductcategoryFactory extends Factory
+class BuyHistoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,7 +17,9 @@ class ProductcategoryFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->text(10),
+            'user_id' => rand(1, 11),
+            'product_id' => rand(1, 11),
+            'paid' => rand(0, 1),
         ];
     }
 }

@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pricehistories', function (Blueprint $table) {
+        Schema::create('price_histories', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('product_id')->constrained('products')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('product_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->decimal('sell_price_single_item');
             $table->integer('amount_per_box');
             $table->decimal('buy_price_per_box');

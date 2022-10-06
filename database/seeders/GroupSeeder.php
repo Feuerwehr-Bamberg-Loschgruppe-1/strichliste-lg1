@@ -9,7 +9,7 @@ use Illuminate\Database\Seeder;
 class GroupSeeder extends Seeder
 {
     use WithoutModelEvents;
-    
+
     /**
      * Run the database seeds.
      *
@@ -19,14 +19,14 @@ class GroupSeeder extends Seeder
     {
         Group::factory()->create([
             'name' => 'admin',
-            'has_admin_rights' => TRUE,
-            'is_able_to_login' => TRUE,
+            'has_admin_rights' => true,
+            'is_able_to_login' => true,
         ]);
 
         Group::factory()->create([
             'name' => 'user',
-            'has_admin_rights' => FALSE,
-            'is_able_to_login' => FALSE,
+            'has_admin_rights' => false,
+            'is_able_to_login' => false,
         ]);
     }
 }

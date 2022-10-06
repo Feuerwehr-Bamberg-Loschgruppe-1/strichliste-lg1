@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('stocks', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('buyhistory_id')->constrained('buyhistories')->cascadeOnUpdate()->cascadeOnDelete();
-            $table->foreignID('order_id')->constrained('orders')->cascadeOnUpdate()->cascadeOnDelete();
-            $table->foreignID('product_id')->constrained('products')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('buy_history_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('order_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('product_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->integer('amount_in_stock');
             $table->timestamps();
         });

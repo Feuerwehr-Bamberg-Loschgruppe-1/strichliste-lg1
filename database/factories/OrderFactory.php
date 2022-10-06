@@ -19,7 +19,7 @@ class OrderFactory extends Factory
         return [
             'product_id' => rand(1, 11),
             'amount_of_boxes' => rand(1, 10),
-            'total_buy_price_of_boxes' => rand(499, 20000)/100,
+            'total_buy_price_of_boxes' => rand(499, 20000) / 100,
         ];
     }
 }
