@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             BuyHistorySeeder::class,
             StockSeeder::class,
             TransactionSeeder::class,
+            CreditSeeder::class,
         ]);
     }
 }
