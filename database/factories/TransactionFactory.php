@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Inbound>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Transaction>
  */
-class InboundFactory extends Factory
+class TransactionFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,7 +19,6 @@ class InboundFactory extends Factory
         return [
             'user_id' => rand(1, 11),
             'sum_paid' => rand(1, 50),
-            'credit' => rand(-20, 50),
         ];
     }
 }

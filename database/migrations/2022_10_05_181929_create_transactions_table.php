@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('inbounds', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->foreignID('user_id')->nullable(false)->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
             $table->decimal('sum_paid');
-            $table->decimal('credit');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('inbounds');
+        Schema::dropIfExists('transactions');
     }
 };

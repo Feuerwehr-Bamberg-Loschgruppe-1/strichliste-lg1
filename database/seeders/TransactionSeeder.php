@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Inbound;
+use App\Models\Transaction;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class InboundSeeder extends Seeder
+class TransactionSeeder extends Seeder
 {
     use WithoutModelEvents;
 
@@ -17,12 +17,11 @@ class InboundSeeder extends Seeder
      */
     public function run()
     {
-        Inbound::factory()->create([
+        Transaction::factory()->create([
             'user_id' => rand(1, 11),
             'sum_paid' => rand(1, 50),
-            'credit' => rand(-20, 50),
         ]);
 
-        Inbound::factory(10)->create();
+        Transaction::factory(10)->create();
     }
 }

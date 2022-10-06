@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             OrderSeeder::class,
             BuyhistorySeeder::class,
             StockSeeder::class,
-            InboundSeeder::class,
+            TransactionSeeder::class,
         ]);
     }
 }
