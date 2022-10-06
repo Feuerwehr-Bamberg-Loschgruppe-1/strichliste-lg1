@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('buyhistories', function (Blueprint $table) {
+        Schema::create('buy_histories', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('user_id')->nullable(false)->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
-            $table->foreignID('product_id')->nullable(false)->constrained('products')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('user_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('product_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->boolean('paid');
             $table->timestamps();
         });

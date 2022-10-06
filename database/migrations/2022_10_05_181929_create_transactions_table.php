@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('user_id')->nullable(false)->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('user_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
             $table->decimal('sum_paid');
             $table->timestamps();
         });

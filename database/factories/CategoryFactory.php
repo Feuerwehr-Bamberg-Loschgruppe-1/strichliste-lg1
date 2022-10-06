@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Buyhistory>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
  */
-class BuyhistoryFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,9 +17,7 @@ class BuyhistoryFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => rand(1, 11),
-            'product_id' => rand(1, 11),
-            'paid' => rand(0, 1),
+            'name' => fake()->text(10),
         ];
     }
 }

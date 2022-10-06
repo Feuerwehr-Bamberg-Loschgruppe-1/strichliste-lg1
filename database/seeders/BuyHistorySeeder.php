@@ -2,14 +2,14 @@
 
 namespace Database\Seeders;
 
-use App\Models\Productcategory;
+use App\Models\BuyHistory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ProductcategorySeeder extends Seeder
+class BuyHistorySeeder extends Seeder
 {
     use WithoutModelEvents;
-    
+
     /**
      * Run the database seeds.
      *
@@ -17,12 +17,12 @@ class ProductcategorySeeder extends Seeder
      */
     public function run()
     {
-        Productcategory::factory()->create([
-            'name' => 'Trinken',
+        BuyHistory::factory()->create([
+            'user_id' => rand(1, 11),
+            'product_id' => rand(1, 11),
+            'paid' => rand(0, 1),
         ]);
 
-        Productcategory::factory()->create([
-            'name' => 'Essen',
-        ]);
+        BuyHistory::factory(10)->create();
     }
 }
