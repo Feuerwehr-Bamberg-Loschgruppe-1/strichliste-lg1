@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('group_id')->nullable(false)->constrained('groups')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('group_id')->constrained('groups')->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('first_name');
             $table->string('last_name');
             $table->string('name');

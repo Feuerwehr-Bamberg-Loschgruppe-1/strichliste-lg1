@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('productcategory_id')->nullable(false)->constrained('productcategories')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->foreignID('productcategory_id')->constrained('productcategories')->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('name')->unique();
             $table->decimal('sell_price_single_item');
             $table->integer('amount_per_box');
