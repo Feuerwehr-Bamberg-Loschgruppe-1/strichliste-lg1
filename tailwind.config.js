@@ -30,4 +30,6 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
     ],
+    //Enable Dark-Mode for everything => 'media', if 'class', add class="dark" to elements
+    darkMode: 'media', //false, 'class', 'media'
 }
