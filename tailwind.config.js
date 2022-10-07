@@ -23,6 +23,8 @@ module.exports = {
         './resources/**/*.php',
         './resources/**/*.vue',
         './resources/**/*.twig',
+        //OWN DECLARATION
+        "./resources/**/*.blade.php",
     ],
     plugins: [
         require('@tailwindcss/forms'),
