@@ -11,6 +11,7 @@ module.exports = {
     variants: {
         extend: {
             backgroundColor: ['active'],
+            display: ["dark"],
         }
     },
     content: [
@@ -31,5 +32,5 @@ module.exports = {
         require('@tailwindcss/typography'),
     ],
     //Enable Dark-Mode for everything => 'media', if 'class', add class="dark" to elements
-    darkMode: 'media', //false, 'class', 'media'
+    darkMode: 'class', //false, 'class', 'media'
 }

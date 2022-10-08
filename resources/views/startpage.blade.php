@@ -181,7 +181,7 @@
       </div>
     </div>
     <div class="flex flex-col md:pl-64">
-      <div class="sticky top-0 z-10 flex flex-shrink-0 h-16 bg-white shadow">
+      <div class="sticky top-0 z-10 flex flex-shrink-0 h-16 bg-white dark:bg-gray-900 shadow">
         <button type="button" class="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
           <span class="sr-only">Open sidebar</span>
           <!-- Heroicon name: outline/bars-3-bottom-left -->
@@ -205,7 +205,7 @@
             </form>-->
           </div>
           <div class="flex items-center ml-4 md:ml-6">
-            <button type="button" class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <button type="button" class="p-1 text-gray-400 bg-white dark:bg-gray-900 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               <span class="sr-only">View notifications</span>
               <!-- Heroicon name: outline/bell -->
               <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -213,7 +213,7 @@
               </svg>
             </button>
             <!-- Dark-Mode switch button -->
-            <button :class="{'dark': darkMode === true}" type="button" class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <button id="darkmode-toggle" type="button" class="p-1 text-gray-400 bg-white dark:bg-gray-900 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               <span class="dark:hidden">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
                   <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-sky-500"></path>

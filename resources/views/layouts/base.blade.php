@@ -37,4 +37,18 @@
     <body class="h-full">
         @yield('body')
     </body>
+    <script>
+        let toggler = document.getElementById("darkmode-toggle");
+        if (toggler) {
+            toggler.addEventListener("click", () => {
+                document.documentElement.classList.toggle("dark");
+            });
+        }
+        if (document.documentElement.classList.contains("dark")) {
+            localStorage.theme = "dark";
+        }
+        else {
+            localStorage.theme = "light";
+        }
+    </script>
 </html>
