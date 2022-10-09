@@ -34,7 +34,7 @@
         </script>
     </head>
 
-    <body class="h-full">
+    <body class="h-full dark:bg-gray-700">
         @yield('body')
     </body>
     <script>
@@ -42,13 +42,13 @@
         if (toggler) {
             toggler.addEventListener("click", () => {
                 document.documentElement.classList.toggle("dark");
+                if (document.documentElement.classList.contains("dark")) {
+                    localStorage.theme = "dark";
+                }
+                else {
+                    localStorage.theme = "theme";
+                }
             });
-        }
-        if (document.documentElement.classList.contains("dark")) {
-            localStorage.theme = "dark";
-        }
-        else {
-            localStorage.theme = "light";
         }
     </script>
 </html>
