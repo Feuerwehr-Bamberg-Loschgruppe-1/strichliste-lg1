@@ -14,9 +14,9 @@
           From: "opacity-100"
           To: "opacity-0"
       -->
-      <div class="fixed inset-0 bg-gray-600 bg-opacity-75"></div>
+      <div class="fixed inset-0 hidden bg-gray-600 bg-opacity-75"></div>
   
-      <div class="fixed inset-0 z-40 flex">
+      <div class="fixed inset-0 z-40 flex hidden">
         <!--
           Off-canvas menu, show/hide based on off-canvas menu state.
   
@@ -241,7 +241,7 @@
               </svg>
             </button>
             <!-- Dark-Mode switch button -->
-            <button @click="darkMode = !darkMode" type="button" class="p-1 text-gray-400 transition-all bg-white rounded-full dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <button id="darkmode-toggle" type="button" class="p-1 text-gray-400 transition-all bg-white rounded-full dark:bg-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               <span class="dark:hidden">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
                   <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-sky-500"></path>

@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html   lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full bg-gray-100"
-        x-data="{ darkMode: localStorage.getItem('dark') === 'true'} "
-        x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
-        x-bind:class="{ 'dark': darkMode }">
+<html   lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full bg-gray-100">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,9 +22,33 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script>
+            try {
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark')
+                    //document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0B1120')
+                } else {
+                    document.documentElement.classList.remove('dark')
+                }
+            } catch (_) {}
+        </script>
     </head>
 
     <body class="h-full transition-all dark:bg-gray-700">
         @yield('body')
     </body>
+    <script>
+        let toggler = document.getElementById("darkmode-toggle");
+        if (toggler) {
+            toggler.addEventListener("click", () => {
+                document.documentElement.classList.toggle("dark");
+                if (document.documentElement.classList.contains("dark")) {
+                    localStorage.theme = "dark";
+                }
+                else {
+                    localStorage.theme = "theme";
+                }
+            });
+        }
+    </script>
 </html>
