@@ -34,7 +34,7 @@
         </script>
     </head>
 
-    <body class="h-full dark:bg-gray-700">
+    <body class="h-full dark:bg-gray-700 transition-all">
         @yield('body')
     </body>
     <script>
