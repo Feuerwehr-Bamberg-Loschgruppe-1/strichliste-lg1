@@ -2,7 +2,7 @@
 <html   lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full bg-gray-100">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         @hasSection('title')
 
             <title>@yield('title') - {{ config('app.name') }}</title>
@@ -12,6 +12,7 @@
 
         <!-- Favicon -->
 		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+        <meta name="theme-color" content="#111827">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -34,7 +35,7 @@
         </script>
     </head>
 
-    <body class="h-full transition-all dark:bg-gray-700">
+    <body class="lg:h-full md:h-auto transition-all dark:bg-gray-700">
         @yield('body')
     </body>
     <script>

@@ -210,7 +210,7 @@
     </div>
     <div class="flex flex-col md:pl-64">
       <div class="sticky top-0 z-10 flex flex-shrink-0 h-16 transition-all bg-white shadow dark:bg-gray-900">
-        <button type="button" class="px-4 text-gray-500 border-r border-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
+        <button type="button" class="px-4 text-gray-500 border-r border-gray-200 transition-all dark:border-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
           <span class="sr-only">Open sidebar</span>
           <!-- Heroicon name: outline/bars-3-bottom-left -->
           <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -296,22 +296,13 @@
           </div>
           <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
             <h2 class="text-sm font-medium text-gray-500 transition-all dark:text-gray-400">Pinned Projects</h2>
-              <ul role="list" class="grid grid-cols-1 gap-5 mt-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-5">
+              <ul role="list" class="grid grid-cols-2 gap-5 mt-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-5">
                 <li class="flex col-span-1 rounded-md shadow-sm">
                   <div class="flex items-center justify-center flex-shrink-0 w-16 text-sm font-medium text-white bg-pink-600 rounded-l-md">GA</div>
                   <div class="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-gray-200 rounded-r-md">
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -323,15 +314,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Component Design</a>
                       <p class="text-gray-500">12 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -341,15 +323,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Templates</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -361,15 +334,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">React Components</a>
                       <p class="text-gray-500">8 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -380,15 +344,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -398,15 +353,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -418,15 +364,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Component Design</a>
                       <p class="text-gray-500">12 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -436,15 +373,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Templates</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -456,15 +384,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">React Components</a>
                       <p class="text-gray-500">8 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -475,15 +394,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -493,15 +403,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -513,15 +414,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Component Design</a>
                       <p class="text-gray-500">12 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -531,15 +423,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Templates</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -551,15 +434,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">React Components</a>
                       <p class="text-gray-500">8 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -570,15 +444,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -588,15 +453,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -608,15 +464,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Component Design</a>
                       <p class="text-gray-500">12 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -626,15 +473,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Templates</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -646,15 +484,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">React Components</a>
                       <p class="text-gray-500">8 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -665,15 +494,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -683,15 +503,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -703,15 +514,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Component Design</a>
                       <p class="text-gray-500">12 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -721,15 +523,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Templates</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
@@ -741,15 +534,6 @@
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">React Components</a>
                       <p class="text-gray-500">8 Members</p>
                     </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
-                    </div>
                   </div>
                 </li>
 
@@ -759,15 +543,6 @@
                     <div class="flex-1 px-4 py-2 text-sm truncate">
                       <a href="#" class="font-medium text-gray-900 hover:text-gray-600">Graph API</a>
                       <p class="text-gray-500">16 Members</p>
-                    </div>
-                    <div class="flex-shrink-0 pr-2">
-                      <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-transparent bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span class="sr-only">Open options</span>
-                        <!-- Heroicon name: mini/ellipsis-vertical -->
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </li>
