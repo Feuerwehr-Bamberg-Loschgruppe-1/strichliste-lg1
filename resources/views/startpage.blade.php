@@ -175,7 +175,7 @@
               From: "translate-x-0"
               To: "-translate-x-full"
           -->
-          <div class="relative flex flex-col flex-1 w-full max-w-xs pt-0 pb-4 bg-white border-gray-200 transition-all dark:bg-gray-800 border-t dark:border-gray-800">
+          <div class="relative flex flex-col flex-1 w-full max-w-xs pt-0 pb-4 bg-gray-100 border-gray-200 transition-all dark:bg-gray-800 border-t dark:border-gray-800">
             <div class="flex-1 h-0 mt-5 overflow-y-auto">
               <nav class="px-2 space-y-1">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
