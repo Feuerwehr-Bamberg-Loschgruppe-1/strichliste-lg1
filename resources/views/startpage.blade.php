@@ -82,9 +82,9 @@
       </div>
     </div>
 
-    <div class="flex flex-col md:pl-64">
+    <div x-data="{ mobileMenuOpen: false }" class="flex flex-col md:pl-64">
       <div class="sticky top-0 z-10 flex flex-shrink-0 h-16 transition-all bg-white shadow dark:bg-gray-900">
-        <button type="button" class="px-4 text-gray-500 border-r border-gray-200 transition-all dark:border-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
+        <button x-on:click="mobileMenuOpen = !mobileMenuOpen" type="button" class="px-4 text-gray-500 border-r border-gray-200 transition-all dark:border-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
           <span class="sr-only">Open sidebar</span>
           <!-- Heroicon name: outline/bars-3-bottom-left -->
           <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -162,9 +162,9 @@
             From: "opacity-100"
             To: "opacity-0"
         -->
-        <div class="fixed inset-0 top-16 bg-gray-600 bg-opacity-75"></div>
+        <div :class="{ 'hidden': !mobileMenuOpen }" class="fixed inset-0 top-16 bg-gray-600 bg-opacity-75"></div>
 
-        <div class="fixed inset-0 top-16 z-40 flex">
+        <div :class="{ 'hidden': !mobileMenuOpen }" class="fixed inset-0 top-16 z-40 flex">
           <!--
             Off-canvas menu, show/hide based on off-canvas menu state.
 
